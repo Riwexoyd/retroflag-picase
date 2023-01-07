@@ -47,7 +47,7 @@ def reset():
 		#self.assertEqual(GPIO.input(resetPin), GPIO.LOW)
 		GPIO.wait_for_edge(resetPin, GPIO.FALLING)
 		os.system("sudo sleep 5s")
-		os.system("sudo shutdown -r now")
+		os.system("sudo shutdown -h now")
 
 
 if __name__ == "__main__":
